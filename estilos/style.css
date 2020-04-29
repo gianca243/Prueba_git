@@ -1,0 +1,36 @@
+/* --  STYLE CONTENIDO MENU --*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    text-align: center;
+    padding: 0.001vw;
+}
+
+.navbar li :hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav li:hover {
+    border-bottom: solid #06c;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(211, 208, 208);
+    padding: 10px;
+}
+
+.selected {
+    font-weight: bold;
+    border-bottom: solid;
+    color: #06c;
+}
+
+/* --  TERMINA CONTENIDO MENU --*/
