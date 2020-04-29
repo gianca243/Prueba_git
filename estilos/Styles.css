@@ -1,3 +1,28 @@
-p{
+p {
     color: aqua;
 }
+
+h1 {
+    color: blue;
+    text-decoration: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.animation {
+    position: absolute;
+
+    animation-name: corazon;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes corazon {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
