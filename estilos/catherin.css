@@ -1,0 +1,51 @@
+p {
+    color: aqua;
+}
+
+.nav-bar ul {
+    margin: 0;
+    padding: 0%;
+    display: flex;
+}
+
+.nav-bar li {
+    list-style-type: none;
+}
+
+.nav-bar a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+h1 {
+    color: blue;
+    text-decoration: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.animation {
+    position: absolute;
+
+    animation-name: corazon;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes corazon {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
