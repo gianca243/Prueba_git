@@ -1,0 +1,55 @@
+p {
+    color: aqua;
+}
+
+.Container1 {
+    width: 85%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    background: linear-gradient(-30deg, #ee2222 0, #012246 100%);
+    border-radius: 15px;
+    border: 0;
+    padding: 40px 40px 40px 40px;
+
+}
+
+.ul-Style ul {
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.ul-Style li {
+    /*quitar estilo de viñetas*/
+    list-style: none;
+}
+
+.ul-Style li img {
+    /*Tamaño de fondo se expanda*/
+    background-size: cover;
+    /*Borde redondeado*/
+    border-radius: 6px;
+    opacity: .6;
+    width: 200px;
+    height: 200px;
+    /*Para que se tenga transición de un estado a otro*/
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: scale(1.25) rotateY(180deg);
+    -webkit-transition: all .6s ease;
+}
+
+.ul-Style li img:hover {
+    /*La opacidad va a volver a 1*/
+    opacity: 1;
+    /*que el efecto del borde se note*/
+    border-radius: 200px;
+    /*Cero px en X, cero px en y, 20px de resplandor y un color blanco al final*/
+    box-shadow: 0px 0px 40px rgb(255, 255, 255);
+    /*la propiedad de la amigación, le da la escala y la rotación*/
+    -webkit-transform: scale(1.25) rotate(360deg);
+}
