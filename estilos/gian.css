@@ -1,51 +1,21 @@
-p {
-    color: aqua;
+
+.activar:hover .animacion{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;  
 }
 
-.nav-bar ul {
-    margin: 0;
-    padding: 0%;
-    display: flex;
-}
-
-.nav-bar li {
-    list-style-type: none;
-}
-
-.nav-bar a {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    padding: 1em;
-    border-radius: 10px;
+.animacion{
     width: 100px;
-    box-sizing: border-box;
-    text-align: center;
+    height: 100px;
+    background-color: red;
+    position: relative;
 }
-
-
-h1 {
-    color: blue;
-    text-decoration: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.animation {
-    position: absolute;
-
-    animation-name: corazon;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes corazon {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
